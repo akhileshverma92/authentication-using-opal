@@ -1,0 +1,11 @@
+opal:
+  server:
+    source:
+      repo_url: "https://github.com/yourusername/opal-authorization-demo"
+      branch: main
+      paths:
+        - policy.rego
+  client:
+    server_url: "http://opal-server:7002"
+    policy_store_type: "OPA"
+    opa_url: "http://localhost:8181"
